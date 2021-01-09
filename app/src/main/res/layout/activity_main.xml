@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btStart"
+        android:layout_width="100dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="8dp"
+        android:text="Start"
+        app:layout_constraintEnd_toStartOf="@+id/btLogin"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btLogin"
+        android:layout_width="100dp"
+        android:layout_height="55dp"
+        android:text="Login"
+        app:layout_constraintBottom_toBottomOf="@+id/btStart"
+        app:layout_constraintEnd_toStartOf="@+id/btLoginFail"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btStart"
+        app:layout_constraintTop_toTopOf="@+id/btStart" />
+
+    <Button
+        android:id="@+id/btLoginFail"
+        android:layout_width="100dp"
+        android:layout_height="55dp"
+        android:text="Login Fail"
+        app:layout_constraintBottom_toBottomOf="@+id/btStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btLogin"
+        app:layout_constraintTop_toTopOf="@+id/btStart" />
+
+    <Button
+        android:id="@+id/btConnect"
+        android:layout_width="100dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="8dp"
+        android:text="Connect"
+        app:layout_constraintEnd_toStartOf="@+id/btConnectFail"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btStart" />
+
+    <Button
+        android:id="@+id/btConnectFail"
+        android:layout_width="100dp"
+        android:layout_height="55dp"
+        android:text="Connect Fail"
+        app:layout_constraintBottom_toBottomOf="@+id/btConnect"
+        app:layout_constraintEnd_toStartOf="@+id/btFirstData"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btConnect"
+        app:layout_constraintTop_toTopOf="@+id/btConnect" />
+
+    <Button
+        android:id="@+id/btFirstData"
+        android:layout_width="100dp"
+        android:layout_height="55dp"
+        android:text="First data"
+        app:layout_constraintBottom_toBottomOf="@+id/btConnect"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btConnectFail"
+        app:layout_constraintTop_toTopOf="@+id/btConnect" />
+
+    <Button
+        android:id="@+id/btDrop"
+        android:layout_width="100dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="8dp"
+        android:text="Drop"
+        app:layout_constraintEnd_toStartOf="@+id/btLastData"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btConnect" />
+
+    <Button
+        android:id="@+id/btLastData"
+        android:layout_width="100dp"
+        android:layout_height="55dp"
+        android:text="Last data"
+        app:layout_constraintBottom_toBottomOf="@+id/btDrop"
+        app:layout_constraintEnd_toStartOf="@+id/btDisconnect"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btDrop"
+        app:layout_constraintTop_toTopOf="@+id/btDrop" />
+
+    <Button
+        android:id="@+id/btDisconnect"
+        android:layout_width="100dp"
+        android:layout_height="55dp"
+        android:text="Disconnect"
+        app:layout_constraintBottom_toBottomOf="@+id/btDrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btLastData"
+        app:layout_constraintTop_toTopOf="@+id/btDrop" />
+
+    <Button
+        android:id="@+id/btDisconnecFail"
+        android:layout_width="100dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="8dp"
+        android:text="Disconnect Fail"
+        app:layout_constraintEnd_toStartOf="@+id/btStop"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btDrop" />
+
+    <Button
+        android:id="@+id/btStop"
+        android:layout_width="100dp"
+        android:layout_height="55dp"
+        android:text="Stop"
+        app:layout_constraintBottom_toBottomOf="@+id/btDisconnecFail"
+        app:layout_constraintEnd_toStartOf="@+id/btStopFailed"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btDisconnecFail"
+        app:layout_constraintTop_toTopOf="@+id/btDisconnecFail"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btStopFailed"
+        android:layout_width="100dp"
+        android:layout_height="55dp"
+        android:text="Stop failed"
+        app:layout_constraintBottom_toBottomOf="@+id/btStop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btStop"
+        app:layout_constraintTop_toTopOf="@+id/btStop"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btDisconnecFail"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
